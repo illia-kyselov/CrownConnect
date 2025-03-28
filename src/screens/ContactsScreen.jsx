@@ -22,7 +22,6 @@ export default function ContactsScreen() {
     const [activeTags, setActiveTags] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [activeTab, setActiveTab] = useState('Contacts');
-    console.log(contacts)
     const filteredContacts = searchQuery.trim() === ''
         ? activeTags.length === 0
             ? contacts

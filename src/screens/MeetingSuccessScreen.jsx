@@ -22,8 +22,6 @@ export default function MeetingSuccessScreen({ route, navigation }) {
     }, [navigation]);
 
     const parseDateTime = (dateStr, timeStr) => {
-        console.log('dateStr', dateStr);
-        console.log('timeStr', timeStr);
         const datePart = parse(dateStr, 'd/M/yyyy', new Date());
 
         if (timeStr.toUpperCase().includes('AM') || timeStr.toUpperCase().includes('PM')) {
